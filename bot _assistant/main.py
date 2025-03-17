@@ -26,7 +26,7 @@ def show_phone(args, contacts):
     name = args[0]
     name_lower = name.lower()
     if name_lower not in contacts:
-        return "Contact {name} not found"
+        return f"Contact {name} not found"
     return contacts[name_lower]
 
 def show_all(contacts):
